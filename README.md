@@ -31,6 +31,8 @@ The [Codex Sinaiticus Project](https://codexsinaiticus.org/en/) is the source of
 
 [Squatch Stack GitHub Sponsors](https://github.com/sponsors/Squatch-Stack) and [Ko-fi](https://ko-fi.com/squatchstack) support Squatch Stack's independent open tooling and maintenance. They are not fundraising channels for the manuscript institutions. Patreon is intentionally omitted from the site and `FUNDING.yml` until its current URL is verified. Sponsorship does not expand the rights to redistribute project XML or images.
 
+See the [funding and attribution statement](FUNDING.md) and the [integration roadmap](ROADMAP.md) for concrete work and acceptance gates.
+
 ## Contribution path
 
 The [Leipzig University Library redevelopment](https://www.ub.uni-leipzig.de/forschungsbibliothek/projekte/projekte-chronologisch-alle/codex-sinaiticus) already targets mobile accessibility, IIIF and reusable code. The proposed handoff is a small, tested passage dossier component with a typed evidence adapter and source/rights rules. Institutional integration would start with their preferred API, license and contribution process. No claim is made that this code is part of their portal.

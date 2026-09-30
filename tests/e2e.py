@@ -31,6 +31,7 @@ def main() -> None:
             assert page.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth")
             assert page.get_by_text("Source link only").is_visible()
             assert page.get_by_role("link", name="Sponsor Squatch Stack").get_attribute("href") == "https://github.com/sponsors/Squatch-Stack"
+            assert page.get_by_role("link", name="Source & tests").get_attribute("href") == "https://github.com/Squatch-Stack/passage-evidence-lens"
             assert page.get_by_role("link", name="One-time tip on Ko-fi").get_attribute("rel") == "noopener noreferrer"
             page.get_by_role("tab", name="Corrections").click()
             assert "No correction text is bundled" in page.locator("#panel-corrections").inner_text()

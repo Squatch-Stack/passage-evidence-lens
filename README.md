@@ -2,6 +2,8 @@
 
 An **independent, unofficial interface study** for finding a manuscript passage, reading its sourced transcription, seeing correction hands, and opening the institution's source record. It is designed as a small contribution or companion for the Codex Sinaiticus Project's ongoing portal renewal, not as a replacement for its institutional service.
 
+**[Open the public, source-link-only demo](https://squatch-stack.github.io/passage-evidence-lens/)** · [View the source and CI](https://github.com/Squatch-Stack/passage-evidence-lens/actions)
+
 The code is MIT-licensed and has no runtime package dependencies. `data/loci.json` contains four passage labels and official deep links. This repository distributes **no manuscript images, XML transcription, translation text, folio metadata, or copies of the existing website**. The manuscript-looking artwork is original CSS. The local research adapter is opt-in and binds to loopback; its external SQLite file is never included in this repository.
 
 ## Run

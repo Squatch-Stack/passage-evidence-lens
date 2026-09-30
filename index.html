@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'">
+  <title>Passage Evidence Lens · independent interface study</title>
+  <meta name="description" content="An independent, source-linked interface study for manuscript passage evidence and corrections.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to passage evidence</a>
+  <header class="site-header">
+    <a class="wordmark" href="./" aria-label="Passage Evidence Lens home"><span class="mark" aria-hidden="true">⌑</span><span>Passage <strong>Evidence Lens</strong></span></a>
+    <span class="study-label">Independent interface study</span>
+    <a class="header-source" href="https://codexsinaiticus.org/en/" target="_blank" rel="noopener noreferrer">Official Codex Sinaiticus site <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A source-first passage workspace</p>
+        <h1 id="hero-title">One passage. <em>Every claim has a source.</em></h1>
+        <p class="lede">Find a manuscript locus, inspect its transcription and corrections, and follow the evidence back to the institution that holds it. This prototype is independent of the Codex Sinaiticus Project.</p>
+      </div>
+      <div class="folio-art" aria-hidden="true"><div class="folio-inner"><span>01</span><i></i><i></i><i></i><i></i><i></i><i></i><b>evidence / edition / witness</b></div></div>
+    </section>
+    <section class="workspace" aria-labelledby="workspace-title">
+      <div class="workspace-head"><div><p class="eyebrow">Explore the pilot</p><h2 id="workspace-title">Passage workspace</h2></div><span class="scope-badge">Four linked loci · bounded study</span></div>
+      <form id="ref-form" class="ref-form" role="search">
+        <label for="ref-input">Reference</label>
+        <div class="ref-controls"><input id="ref-input" name="ref" value="Luke.11.10" autocomplete="off" spellcheck="false" aria-describedby="ref-help"><button type="submit">Open passage <span aria-hidden="true">→</span></button></div>
+        <p id="ref-help">Try Luke.11.10, Luke.11.9, Matt.7.7, or Matt.7.8.</p>
+      </form>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+      <div class="evidence-grid">
+        <div class="source-stage" aria-labelledby="source-stage-title">
+          <div class="stage-bar"><div><p class="eyebrow">Manuscript witness</p><h3 id="source-stage-title">Codex Sinaiticus</h3></div><span>GA 01</span></div>
+          <div class="source-illustration" role="img" aria-label="Abstract manuscript placeholder; no manuscript image is reproduced"><div class="page-recto"><span class="page-glyph">⌑</span><div class="ink-lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="illustration-label">Original illustration · no manuscript image</div></div>
+          <div class="stage-bottom"><span id="stage-ref">Luke.11.10</span><a id="official-link" href="https://codexsinaiticus.org/en/" target="_blank" rel="noopener noreferrer">Open official manuscript view <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="detail-stage">
+          <div class="detail-top"><div><p class="eyebrow">Evidence dossier</p><h3 id="detail-ref">Luke.11.10</h3></div><span id="mode-pill" class="mode-pill">Source link only</span></div>
+          <div class="tab-list" role="tablist" aria-label="Evidence sections">
+            <button type="button" role="tab" id="tab-reading" aria-controls="panel-reading" aria-selected="true" tabindex="0" data-tab="reading">Reading</button>
+            <button type="button" role="tab" id="tab-corrections" aria-controls="panel-corrections" aria-selected="false" tabindex="-1" data-tab="corrections">Corrections</button>
+            <button type="button" role="tab" id="tab-source" aria-controls="panel-source" aria-selected="false" tabindex="-1" data-tab="source">Source</button>
+            <button type="button" role="tab" id="tab-integration" aria-controls="panel-integration" aria-selected="false" tabindex="-1" data-tab="integration">Integration</button>
+          </div>
+          <section id="panel-reading" role="tabpanel" aria-labelledby="tab-reading"><div id="reading-content"></div></section>
+          <section id="panel-corrections" role="tabpanel" aria-labelledby="tab-corrections" hidden><div id="corrections-content"></div></section>
+          <section id="panel-source" role="tabpanel" aria-labelledby="tab-source" hidden><div id="source-content"></div></section>
+          <section id="panel-integration" role="tabpanel" aria-labelledby="tab-integration" hidden><div id="integration-content"></div></section>
+        </div>
+      </div>
+    </section>
+    <section class="principles" aria-labelledby="principles-title"><p class="eyebrow">What this demonstrates</p><h2 id="principles-title">A contribution designed to fit upstream</h2><div class="principle-grid"><article><span>01</span><h3>Traceable readings</h3><p>Keep the witness, transcription version, correction hand, and source locator attached to every displayed claim.</p></article><article><span>02</span><h3>Respectful linking</h3><p>Leave scans and restricted media with their institutions. Open the official folio instead of copying its images.</p></article><article><span>03</span><h3>Portable component</h3><p>Static UI today; a narrow evidence adapter can later consume approved IIIF and Web Annotation resources.</p></article></div></section>
+  </main>
+  <footer class="site-footer"><div><strong>Passage Evidence Lens</strong><p>Independent open interface work by Squatch Stack. No project endorsement or institutional affiliation is implied. The Codex Sinaiticus Project remains the source of record.</p></div><div class="footer-links"><a href="https://github.com/sponsors/Squatch-Stack" target="_blank" rel="noopener noreferrer">Sponsor Squatch Stack</a><a href="https://ko-fi.com/squatchstack" target="_blank" rel="noopener noreferrer">One-time tip on Ko-fi</a><a href="https://codexsinaiticus.org/en/contact.aspx" target="_blank" rel="noopener noreferrer">Project contact</a></div><p class="funding-note">Support funds Squatch Stack's independent open tooling; it is not a donation to the manuscript institutions.</p></footer>
+</body>
+</html>

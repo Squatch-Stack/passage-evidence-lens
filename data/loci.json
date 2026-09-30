@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "description": "Reference and official link only. No transcription, image, or folio metadata is distributed.",
+  "loci": [
+    {"ref": "Matt.7.7", "url": "https://codexsinaiticus.org/en/manuscript.aspx?book=33&chapter=7&verse=7"},
+    {"ref": "Matt.7.8", "url": "https://codexsinaiticus.org/en/manuscript.aspx?book=33&chapter=7&verse=8"},
+    {"ref": "Luke.11.9", "url": "https://codexsinaiticus.org/en/manuscript.aspx?book=35&chapter=11&verse=9"},
+    {"ref": "Luke.11.10", "url": "https://codexsinaiticus.org/en/manuscript.aspx?book=35&chapter=11&verse=10"}
+  ]
+}
